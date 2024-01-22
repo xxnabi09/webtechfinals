@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyles.css">
+    
+    <title>Enchanté Elixir - Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <form id="loginForm" action="#" method="post" onsubmit="return validateForm()">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            
+            if (username === '' || password === '') {
+                alert('Please enter both username and password.');
+                return false;
+            }
+            
+            var validUsername = 'enchantelixir';
+            var validPassword = 'enchantepassword';
+
+            if (username === validUsername && password === validPassword) {
+                alert('Login successful!');
+                return true;
+            } else {
+                alert('Invalid username or password. Please try again.');
+                return false;
+            }
+        }
+    </script>
+    </body>
+</html>

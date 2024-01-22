@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2E7E2;
+}
+
+header {
+    background-color: #f3f0f0;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.welcome {
+    background-image: url('https://img.freepik.com/free-photo/horizontal-banner-cosmetic-product-with-jade-roller-gua-sha_23-2149446529.jpg?w=1380&t=st=1705751786~exp=1705752386~hmac=e3dac29525836c2714facb7af19d1f2a0b92b231b05996b0e3e3b8faba2c566a'); /* Add your background image */
+    background-size:cover;
+    color: #aa4545;
+    text-align: center;
+    padding: 100px;
+}
+
+h2{
+    text-align: center;
+}
+
+.products {
+    margin-top: 20px;
+}
+
+.product-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.product-item p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position:static;
+    bottom: 0;
+    width: 100%;
+}
